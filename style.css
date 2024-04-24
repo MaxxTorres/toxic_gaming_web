@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Jersey+25&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Electrolize&family=Jersey+25&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+/*	box-sizing: border-box; */
+}
+
+:root {
+	--color-lightblue: #59CBE8;
+	--color-maldives: #00BCE1;
+	--color-hotpink: #E93CAC;
+	--color-deepblue: #1E22AA;
+	--color-purple: #201547;
+	--color-midnight: #051C2C;
+}
+
+#menu:hover {
+	transform: scale(1.1);
+}
+
+#chat_button:hover {
+	margin-right: 0px;
+}
+
+.glide__slide:hover img{
+	opacity: 0.2;
+}
+
+.glide__slide:hover h3{
+	color: white;
+}
+
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+	/*for gradient*/
+	background-image: linear-gradient(to bottom right, black, #A8A800);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 100%;
+	margin: 0;
+	/*-----------*/
+
+	padding-top: 50px;
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+	font-family: 'Audiowide', sans-serif;
+	color: var(--color-maldives);
+	border-bottom-style: solid;
+	border-left-style: solid;
+	width: 40%;
+	padding: 20px;
+	margin: 50px; 
+}
+
+h2 {
+	font-family: "Electrolize", sans-serif;
+	font-size: clamp(20px, 3vw, 30px);
+	border-left-style: solid;
+	border-color: var(--color-hotpink);
+	border-width: 10px;
+	padding: 10px;
+}
+
+p {
+	line-height: 1.4em;
+}
+
+.toolbar {
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	top: 0px;
+	height: 50px;
+	width: 100%;
+	background: var(--color-midnight);
+}
+
+.toolbar button {
+	height: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+	background: none;
+	border-style: none;
+}
+
+#chat_button {
+	margin-right: -164px;
+	transition-duration: 1s;
+}
+
+#chat_button div{
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+#chat_button p {
+	font-family: 'Electrolize', sans-serif;
+	color: white;
+}
+
+#chat_box button, input {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+
+#menu_box {
+	position: fixed;
+	display: none;
+	flex-direction: column;
+	top: 50px;
+	width: 180px;
+	background: var(--color-purple);
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-width: 1px;
+	font-family: 'Audiowide', sans-serif;
+	font-size: 20px;
+	gap: 10px;
+	padding: 20px;
+}
+
+#menu_box a {
+	text-decoration: none;
+	color: white;
+}
+
+#chat_box {
+	position: fixed;
+	display: none;
+	flex-direction: column;
+	top: 70px;
+	right: 0;
+	width: 30%;
+	background: var(--color-purple);
+	padding: 10px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-left-style: solid;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-width: 1px;
+}
+
+#convo {
+	display: block;
+	margin-bottom: 5px;
+	border-bottom-style: solid;
+	border-color: var(--color-hotpink);
+}
+
+#message {
+	display: inline;
+}
+
+#user_chat {
+	width: 80%;
+}
+
+.section1 {
+	width: 80%;
+	margin: auto;
+	margin-bottom: 50px;
+	border-right-style: dashed;
+	border-color: var(--color-midnight);
+	border-width: 15px;
+}
+
+.section1 p {
+	padding: 10px;
+	padding-right: 30px;
+}
+
+.games_slider {
+	width: 90%;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.games_slider h2 {
+	border-right-style: solid;
+	border-width: 40px;
+	border-color: var(--color-maldives);
+}
+
+.glide {
+	background: var(--color-midnight);
+	background-color: rgba(0,0,0, 0.7);
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.glide img {
+	width: 100%;
+	border-radius: 10px;
+	transition-duration: 1s;
+}
+
+.glide > div > div {
+	position: relative;
+}
+
+.glide h3 {
+	position: absolute;
+	top: 5%;
+	margin-left: 20px;
+	color: rgba(0, 0, 0, 0);
+	font-size: clamp(20px, 3vw, 30px);
+	text-align: left;
+}
+
+.section2 {
+	width: 90%;
+	margin: auto;
+	margin-bottom: 50px;
+	text-align: right;
+	border-right-style: solid;
+	border-width: 10px;
+	border-color: var(--color-maldives);
+}
+
+.section2 p {
+	padding-right: 20px;
+}
+
+.section2 h2 {
+	border-style: none;
+	margin-right: 2vw;
+}
+
+.section2 div {
+	border-right-style: solid;
+	margin-right: 4vw;
+}
+
+.section2 img {
+	width: 65%;
+	border-style: solid;
+	margin-right: 5vw;
+	margin-top: 15px;
+	border-color: var(--color-maldives);
+	border-radius: 10px;
+}
+
+#implications h2 {
+	border-top-style: solid;
+	border-width: 5px;
+	width: fit-content;
+}
+
+.bottom_accent {
+	width: 100%;
+	padding: 15px;
+	background: var(--color-midnight);
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+}
+
+.bottom_accent a {
+	color: white;
+	font-size: 14px;
+}
+
